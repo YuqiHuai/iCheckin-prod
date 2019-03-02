@@ -25,14 +25,14 @@ export class CourseService {
   }
 
   getCourses(){
-    // return this.courses;
-    return this.coursesCollection.snapshotChanges().pipe(map(changes => {
-      return changes.map(a => {
-        const data = a.payload.doc.data() as Course;
-        data.cid = a.payload.doc.id;
-        return data;
-      })
-    }))
+    return this.courses;
+    // return this.coursesCollection.snapshotChanges().pipe(map(changes => {
+    //   return changes.map(a => {
+    //     const data = a.payload.doc.data() as Course;
+    //     data.cid = a.payload.doc.id;
+    //     return data;
+    //   })
+    // }))
   }
 
   getCoursesFor(instructorEmail: string){
