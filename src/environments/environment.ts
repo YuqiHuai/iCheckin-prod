@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
   firebase2 : {
     apiKey: "AIzaSyCq-1xH_y5ETxIJa_HPimxMVpOp0heuFU0",
     authDomain: "icheckin-goji.firebaseapp.com",

@@ -81,7 +81,7 @@ export class CourseComponent implements OnInit {
     if(this.checkInCode == "") this.notify.update("Please enter a keyword!", "error");
     else{
       this.notify.clear();
-      this.attendanceService.logAttendence(this.user.uid, this.course.cid, this.checkInCode,this.geohash.encode(this.position['coords']['latitude'], this.position['coords']['latitude']));
+      this.attendanceService.logAttendence(this.user.uid, this.course.cid, this.checkInCode,this.geohash.encode(this.position['coords']['latitude'], this.position['coords']['longitude']));
       this.checkInCode = "";
     }
   }

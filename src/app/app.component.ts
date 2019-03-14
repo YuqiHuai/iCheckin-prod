@@ -10,7 +10,7 @@ import { GeohashService } from './core/geohash.service';
 export class AppComponent {
   title = 'iCheckin-prod';
 
-  constructor(private notify:NotifyService){
+  constructor(public notify:NotifyService){
   }
   dismiss(){
     this.notify.clear();
